@@ -1,0 +1,96 @@
+/* Web Resume — Bootstrap 5.3, blue theme, light/dark mode */
+:root {
+  --brand: #0d6efd;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  padding-top: 0;
+  background-color: var(--bs-body-bg);
+}
+
+[data-bs-theme="light"] body {
+  background: radial-gradient(circle at top left, #e8f0ff 0, #f8fafc 45%, #eef2ff 100%);
+}
+
+[data-bs-theme="dark"] body {
+  background-color: #020617;
+}
+
+.navbar-brand {
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.navbar-nav .nav-link.active {
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 0.2rem;
+}
+
+main .card {
+  border-radius: 0.75rem;
+  border: 1px solid rgba(13, 110, 253, 0.08);
+  box-shadow: 0 0.5rem 1.25rem rgba(15, 23, 42, 0.08);
+}
+
+section h2 {
+  font-weight: 600;
+  color: var(--brand);
+}
+
+section {
+  scroll-margin-top: 80px;
+}
+
+[data-bs-theme="dark"] main .card {
+  border-color: rgba(148, 163, 184, 0.4);
+  box-shadow: 0 0.75rem 1.5rem rgba(15, 23, 42, 0.7);
+}
+
+[data-bs-theme="dark"] section h2 {
+  color: #bfdbfe;
+}
+
+[data-bs-theme="dark"] .navbar-nav .nav-link.active {
+  text-decoration-color: #bfdbfe;
+}
+
+.back-to-top {
+  position: fixed;
+  right: 1.5rem;
+  bottom: 1.5rem;
+  z-index: 1030;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.back-to-top.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+@media (max-width: 768px) {
+  main.container {
+    padding-top: 2rem !important;
+    padding-bottom: 3rem !important;
+  }
+  main .rounded-circle {
+    width: 110px !important;
+    height: 110px !important;
+  }
+  .navbar-brand {
+    font-size: 1rem;
+  }
+  .table-sm td,
+  .table-sm th {
+    font-size: 0.85rem;
+    padding-top: 0.35rem;
+    padding-bottom: 0.35rem;
+  }
+}

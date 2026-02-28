@@ -1,0 +1,23 @@
+# OS
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Editor / IDE
+.vscode/
+.idea/
+*.suo
+*.user
+
+# Binaries
+*.exe
+
+# Node / tooling
+node_modules/
+npm-debug.log*
+yarn.lock
+
+# Env / secrets
+.env
+.env.*
+
