@@ -22,7 +22,8 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: webresume
+          # Upload entire repository (site files are at repo root)
+          path: '.'
 
       - name: Deploy to GitHub Pages
         id: deployment
